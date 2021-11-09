@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import { CarouselPage } from './CarouselPage';
+import  CarouselPage from '../components/CarouselPage';
 
 import components, {Layout} from '../components/index';
 
