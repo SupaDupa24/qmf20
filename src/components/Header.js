@@ -4,11 +4,13 @@ import _ from 'lodash';
 import {Link, withPrefix} from '../utils';
 import Icon from './Icon';
 import HeaderMenu from './HeaderMenu';
+import { CarouselPage } from './CarouselPage';
 
 export default class Header extends React.Component {
     render() {
         return (
             <header className="site-header py-2">
+				<CarouselPage />
             	<div className="container">
             		<nav className="navbar flex items-center" aria-label="Main Navigation">
             			<Link className="sr-only" href="#content">Skip to main content</Link>
