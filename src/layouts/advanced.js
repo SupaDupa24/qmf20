@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { CarouselPage } from './CarouselPage';
 
 import components, {Layout} from '../components/index';
 
@@ -7,6 +8,7 @@ export default class Advanced extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
+                <CarouselPage />
             {_.map(_.get(this.props, 'page.sections', null), (section, section_idx) => {
                 let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                 let Component = components[component];
